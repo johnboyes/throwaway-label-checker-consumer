@@ -13,7 +13,7 @@ jobs:
 
   check_semver_label:
     name: Check semantic version label
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:tmp-use-native-arm64-github-action-not-qemu
         with:
